@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+        <p>A murph consists of 100 pullups, 200 pushups, 300 squats. With this tool, you are able to log your daily progress and store it onto an sql database, with delete functionality.</p>
+        <form action="action_page.php"><!--input forms to be processed at action_page-->
+                Date: <input type = "date" name = "date"><br>
+                Time: Hours:<input type = "number" name = "hours">
+                Minutes: <input type = "number" name = "minutes">
+                Seconds: <input type = "number" name = "seconds"><br>
+                Pullups: <input type = "number" name = "pullups"><br>
+                Pushups: <input type = "number" name = "pushups"><br>
+                Squats: <input type = "number" name = "squats"><br>
+                <input type = "submit">
+        </form>
+
+        <form action='delete_page.php'>
+                Clear Table Contents: This is irreversible. Will lose all data.
+                
+                <input type = "submit" value = "Clear Table">
+        </form>
+
+        <form action="table.php"><input type = "submit" value = "see table"></form>
+</html>
